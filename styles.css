@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+* {
+  font-family: "Open Sans";
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: hsl(210, 36%, 96%);
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
+}
+.container {
+  background-color: white;
+  width: 50%;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+p {
+  color: hsl(210, 22%, 49%);
+}
+h3 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.form-control {
+  display: flex;
+  justify-content: center;
+}
+input {
+  padding: 8px;
+  width: 100%;
+  color: hsl(210, 22%, 49%);
+  background-color: hsl(210, 36%, 96%);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-color: transparent;
+}
+input::placeholder {
+  color: hsl(210, 22%, 49%);
+}
+.submit-btn {
+  background-color: hsl(205, 86%, 81%);
+  text-transform: capitalize;
+  border-color: transparent;
+  padding: 8px;
+  letter-spacing: 2px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.submit-btn:hover {
+  color: white;
+}
+.alert {
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  letter-spacing: 6px;
+  text-transform: capitalize;
+}
+.alert-danger {
+  color: #721c24;
+  background: #f8d7da;
+}
+.alert-success {
+  color: #155724;
+  background: #d4edda;
+}
+.grocery-container {
+  margin-top: 20px;
+  visibility: hidden;
+}
+.show-container {
+  visibility: visible;
+}
+.grocery-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-transform: capitalize;
+}
+.grocery-item:hover {
+  color: hsl(210, 22%, 49%);
+  background-color: hsl(210, 36%, 96%);
+}
+.title {
+  color: hsl(209, 61%, 16%);
+  letter-spacing: 2px;
+}
+.edit-btn,
+.delete-btn {
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0 2.5px;
+}
+.edit-btn {
+  color: hsl(125, 71%, 66%);
+}
+.edit-btn:hover {
+  color: hsl(125, 67%, 44%);
+}
+.delete-btn {
+  color: hsl(360, 71%, 66%);
+}
+.delete-btn:hover .clear-btn:hover {
+  color: hsl(360, 67%, 44%);
+}
+.clear-btn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border-color: transparent;
+  color: hsl(360, 71%, 66%);
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  cursor: pointer;
+  transition: all 0.4s linear;
+  margin-top: 20px;
+}
